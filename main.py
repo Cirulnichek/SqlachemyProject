@@ -22,7 +22,46 @@ def main():
     session.add(user)
     session.commit()
 
-    # app.run()
+    user = User()
+    user.surname = "Andrew"
+    user.name = "Walker"
+    user.age = 39
+    user.position = "soldier"
+    user.speciality = "research engineer"
+    user.address = "module_1"
+    user.email = "andrew_chief@mars.org"
+    user.hashed_password = "cap"
+    session = db_session.create_session()
+    session.add(user)
+    session.commit()
+
+    user = User()
+    user.surname = "Paul"
+    user.name = "Brown"
+    user.age = 25
+    user.position = "soldier"
+    user.speciality = "cooker"
+    user.address = "module_2"
+    user.email = "paul_chief@mars.org"
+    user.hashed_password = "cap"
+    session = db_session.create_session()
+    session.add(user)
+    session.commit()
+
+    user = User()
+    user.surname = "Joe"
+    user.name = "Winston"
+    user.age = 45
+    user.position = "soldier"
+    user.speciality = "teacher"
+    user.address = "module_4"
+    user.email = "joe_chief@mars.org"
+    user.hashed_password = "cap"
+    session = db_session.create_session()
+    session.add(user)
+    session.commit()
+
+    app.run()
 
 
 if __name__ == '__main__':
